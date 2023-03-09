@@ -1,0 +1,32 @@
+@keyframes fade_in {
+    from { opacity: 0; }
+    35% { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade_out {
+    from { opacity: 1; }
+    50% { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+
+@keyframes reversed_rotate {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(-360deg) }
+}
+
+@keyframes invisible {
+    0% { opacity: 0.1 }
+    50% { opacity: 1 }
+    100% { opacity: 0.1 }
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0%) }
+    100% { transform: translateX(-100%) }
+}

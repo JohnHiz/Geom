@@ -1,0 +1,62 @@
+{
+  "name": "geom",
+  "version": "1.0.0",
+  "description": "Geom website",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.spimex.pdd:ibs/spx-terminal.git"
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "scripts": {
+    "start": "npm-run-all _cleanup build:prod _watch",
+    "dev": "npm-run-all _serve",
+    "build:prod": "webpack --node-env=production",
+    "build:dev": "webpack --node-env=development",
+    "_serve": "webpack serve --progress",
+    "_watch": "webpack --watch --progress",
+    "_cleanup": "rimraf build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"./**/*.ts\"",
+    "lint:fix": "eslint \"./**/*.ts\" --fix"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.2"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/webpack": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "@webpack-cli/generators": "^3.0.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "clsx": "^1.2.1",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.35.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.3",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.4.0",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

@@ -1,0 +1,14 @@
+@use '../../globals/styles/variables.scss';
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all variables.$default-transition;
+
+    &.active {
+        
+    }
+}

@@ -1,0 +1,69 @@
+.typography {
+    font-family: Roboto;
+
+    &.xl {
+        line-height: 28px;
+        font-size: 19px;
+    }
+
+    &.l {
+        line-height: 28px;
+        font-size: 17px;
+    }
+
+    &.m {
+        line-height: 24px;
+        font-size: 15px;
+    }
+
+    &.s {
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    &.xs {
+        line-height: 16px;
+        font-size: 11px;
+    }
+
+    &.xxs {
+        line-height: 14px;
+        font-size: 9px;
+    }
+
+    &.normal {
+        font-style: normal;
+    }
+
+    &.cursive {
+        font-style: italic;
+    }
+
+    &.thin {
+        font-weight: 100;
+    }
+
+    &.light {
+        font-weight: 200;
+    }
+
+    &.regular {
+        font-weight: 400;
+    }
+
+    &.medium {
+        font-weight: 500;
+    }
+
+    &.bold {
+        font-weight: 600;
+    }
+
+    &.black {
+        font-weight: 700;
+    }
+
+    &.caps {
+        text-transform: uppercase;
+    }
+}

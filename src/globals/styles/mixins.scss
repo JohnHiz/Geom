@@ -1,0 +1,9 @@
+@import './animations.scss';
+
+@mixin animation($name, $duration: 2s, $delay: 0s, $iteration-count: 1, $timing-function: linear) {
+    animation-name: $name;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration-count;
+    animation-timing-function: $timing-function;
+}
